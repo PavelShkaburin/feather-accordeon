@@ -1,0 +1,41 @@
+.accordeon.display-none {
+  display: none;
+}
+
+.accordeon__item {
+  position: relative;
+}
+
+.accordeon__control {
+  position: relative;
+}
+
+.accordeon__control::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.accordeon__panel {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  -webkit-transition-property: max-height, opacity, padding-bottom, padding-top, margin-bottom, margin-top;
+  -o-transition-property: max-height, opacity, padding-bottom, padding-top, margin-bottom, margin-top;
+  transition-property: max-height, opacity, padding-bottom, padding-top, margin-bottom, margin-top;
+}
+
+.accordeon .panel-opened  {
+ opacity: 1;
+}
+
+.accordeon .panel-closed {
+  padding-block: 0;
+  margin-block: 0;
+  opacity: 0;
+}
