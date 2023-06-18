@@ -23,11 +23,11 @@ Also it don't need you to know javaScript for using it. Just include it into you
 
 ## Getting started
 
-Just download [feather-accordeon.js](https://github.com/PavelShkaburin/feather-accordeon/feather-accordeon.js) & [feather-accordeon.css](https://github.com/PavelShkaburin/feather-accordeon/feather-accordeon.css) or use direct links and include it into your project.
+Just download [feather-accordeon.js]([https://github.com/PavelShkaburin/feather-accordeon/feather-accordeon.js](https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.js)) & [[feather-accordeon.css]([https://github.com/PavelShkaburin/feather-accordeon/feather-accordeon.css](https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.css)](https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.css)) or use direct links and include it into your project.
 
 ``` html
-  <link href="https://github.com/PavelShkaburin/feather-accordeon/feather-accordeon.css" rel="stylesheet" type="text/css">
-  <script src="https://github.com/PavelShkaburin/feather-accordeon/feather-accordeon.js"> </script>
+  <link href="https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.css" rel="stylesheet" type="text/css">
+  <script src="https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.js"> </script>
 ```
 
 ## Usage
