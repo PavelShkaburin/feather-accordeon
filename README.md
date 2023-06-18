@@ -23,17 +23,19 @@ Also it don't need you to know javaScript for using it. Just include it into you
 
 ## Getting started
 
-Just download [feather-accordeon.js]([https://github.com/PavelShkaburin/feather-accordeon/feather-accordeon.js](https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.js)) & [[feather-accordeon.css]([https://github.com/PavelShkaburin/feather-accordeon/feather-accordeon.css](https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.css)](https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.css)) or use direct links and include it into your project.
+Just download feather-accordeon.js  & feather-accordeon.css and include it into your project.
 
 ``` html
-  <link href="https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.css" rel="stylesheet" type="text/css">
-  <script src="https://github.com/PavelShkaburin/feather-accordeon/blob/main/feather-accordeon.js"> </script>
+  <link href="./feather-accordeon.css" rel="stylesheet" type="text/css">
+  <script src="./feather-accordeon.js"></script>
 ```
 
 ## Usage
 
-Feather accordeon requires one condition: the html-structure should be like list of items with only two elements inside: control element and content element. Both elements may contain any content. 
+Feather accordeon requires one condition: the html-structure should be like list of items with only two elements inside: control element and content element. Both elements may contain any content.
+
 # example:
+
 ```html
   <ul class="accordeon">
     <li>
@@ -56,7 +58,7 @@ Feather accordeon requires one condition: the html-structure should be like list
     </li>
   </ul>
 ``` 
-Now  just add class "accordeon" to items wrap element as it is in the example above. That's all!
+Now  just add class "accordeon" to items wrap element. That's all!
 
 
 
