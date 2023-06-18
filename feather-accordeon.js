@@ -102,10 +102,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  let shouldWait = false;
   window.addEventListener('resize', () => {
     const openedPanels = document.querySelectorAll('.accordeon__panel.panel-opened');
     openedPanels.forEach(panel => {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      if(shouldWait) {
+        return
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        shouldWait = true;
+        setTimeout(() => {
+          shouldWait = false
+        }, 250);
+      }      
     });
   });
 })
