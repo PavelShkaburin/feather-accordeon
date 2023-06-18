@@ -33,7 +33,7 @@ Just download [feather-accordeon.js](https://github.com/PavelShkaburin/feather-a
 ## Usage
 
 Feather accordeon requires one condition: the html-structure should be like list of items with only two elements inside: control element and content element. Both elements may contain any content. 
-#example:
+# example:
 ```html
   <ul class="accordeon">
     <li>
@@ -56,7 +56,7 @@ Feather accordeon requires one condition: the html-structure should be like list
     </li>
   </ul>
 ``` 
-Now  just add class "accordeon" to items wrap element. That's all!
+Now  just add class "accordeon" to items wrap element as it is in the example above. That's all!
 
 
 
