@@ -19,7 +19,7 @@ Also it don't need you to know javaScript for using it. Just include it into you
 
 ## It won't fit if:
 - you want to customize its behavior with parameters
-- structure of needed accordion is different from  "control is on top, content is under it"
+- structure of needed accordion is different from  "control is on top, content is below"
 
 ## Getting started
 

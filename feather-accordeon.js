@@ -10,10 +10,27 @@ document.addEventListener('DOMContentLoaded', () => {
     for(item of accordeonItems) {
       item.classList.add("accordeon__item");
       item.setAttribute('aria-expanded', false);
-      item.setAttribute('tabindex', 0);
 
       const itemControl = item.firstElementChild;
       itemControl.classList.add("accordeon__control");
+      if(itemControl.tagName !== "button") itemControl.setAttribute('tabindex', 0);
+      itemControl.addEventListener('keydown', function(event) {
+        const eventTab = event.target.parentNode;
+        if (event.target.classList.contains('accordeon__control')) {
+          if ((event.code === 'Enter') || (event.code === 'Space')) {
+            event.preventDefault();
+            togglePanels(event.target)
+          }
+          if ((event.code === 'ArrowUp') && (eventTab.previousElementSibling !== null)) {
+            event.preventDefault();
+            eventTab.previousElementSibling.firstElementChild.focus()
+          }
+          if ((event.code === 'ArrowDown') && (eventTab.nextElementSibling !== null)) {
+            event.preventDefault();
+            eventTab.nextElementSibling.firstElementChild.focus()
+          }
+        }
+      });      
 
       const itemPanel = itemControl.nextElementSibling;
       itemPanel.classList.add("accordeon__panel", "panel-closed");
@@ -42,24 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
         showAccordeonItem(eventTarget)
       }
     }
-
-    accordeon.addEventListener('keydown', function(event) {
-      const eventTab = event.target.parentNode;
-      if (event.target.classList.contains('accordeon__control')) {
-        if ((event.keyCode === 13) || (event.keyCode === 32)) {
-          event.preventDefault();
-          togglePanels(event.target)
-        }
-        if ((event.keyCode === 38) && (eventTab.previousElementSibling !== null)) {
-          event.preventDefault();
-          eventTab.previousElementSibling.firstElementChild.focus()
-        }
-        if ((event.keyCode === 40) && (eventTab.nextElementSibling !== null)) {
-          event.preventDefault();
-          eventTab.nextElementSibling.firstElementChild.focus()
-        }
-      }
-    });
 
     accordeon.addEventListener('click', (event) => {
       if (event.target.classList.contains('accordeon__control')) {
